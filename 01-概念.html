@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    http协议：是规定客户端与服务器内容传输时所必须遵守的传输格式。采用了请求和响应的交互模型
+    http请求消息又叫请求报文，客户端发起的请求叫http请求，它由请求行，请求头部，空行，请求体四部分组成，只有post请求有请求体，get请求没有请求体，请求体中存放的是post方式提交到服务器的数据
+    请求行组成部分：请求方式、url、http协议版本
+
+
+    http响应消息是服务器响应给客户端的消息，又叫响应报文，由状态行，响应头部，空行，响应体组成
+    状态行组成部分：http协议版本、状态码、状态码的描述文本
+
+
+
+    http请求方法有9个,重点记get(查询)、post(新增)、put(修改)、delete(删除)
+
+    http响应状态码：
+    2**成功： 200请求成功，一般用于get、post;201已创建，一般用于post和put
+    3**重定向: 301,永久移动，新的请求由url代替；302临时移动，依然可以使用原有url；304未修改
+    4**客户端错误: 401用户需要验证；403服务器拒绝执行;404,服务器无法根据客户端的请求找到资源；408请求超时
+    5**服务器错误： 500，服务器内部错误；501，服务器不支持该请求方法；503，超载或者系统维护
+</body>
+
+</html>
