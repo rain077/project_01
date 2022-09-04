@@ -24,6 +24,18 @@
     git reset HEAD 要移除的文件名称：将文件从暂存区移除
     git rm -f 文件名：从仓库中和工作区中都移除文件
     git rm --cached 文件名：从仓库中移除文件，保留工作区的文件
+
+
+
+    回退到指定版本
+    1.在一行上展示所有提交历史
+    git log --pretty=oneline
+    2.使用git reset --hard命令 根据指定id回退到指定版本
+    git reset --hard （id）
+    3.在旧版本中 使用git reflog --pretty=oneline命令，查看命令操作的历史
+    git reflog --pretty=oneline
+    4.再次根据最新提交的id，回到最新版本
+    git reset --hard （id）
 </body>
 
 </html>
